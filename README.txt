@@ -22,8 +22,7 @@ ______________________________________________________
         (!) There is no need for neither import or require.
    
         (!) Make sure that this script-tag is placed higher
-            in the hierarchy than the document / code that 
-            is going to use of it.
+            in the hierarchy than your other scripts.
 
 
 
