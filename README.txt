@@ -9,9 +9,8 @@ Website: Hannesrasmussen.se
 // Sprite.js is uncompressed for the sake of IDE comments.
 
 
-(Question) - (How do I import / require this module?)
+(Question) - (How do I import / require this?)
 ______________________________________________________
-
 
     Add the following to your HTML document:
 
@@ -30,7 +29,6 @@ ______________________________________________________
 
 (Question) - (How do I create a sprite?)
 __________________________________________
-
 
     The recommended workflow for creating
     sprites is:
@@ -53,22 +51,17 @@ __________________________________________
 
 (Question) - (Why is this not working? / I am stuck.. etc)
 ______________________________________________________
+
     new Sprite(name,width,height, --> true <-- );
 
     It is advised to pass argument 'help' as true when
     you instatiate your first Sprite. Helpful information
-    and tips are shown in the window.console. 
-
-
-
-
+    and tips are shown to you in the console. 
 
 
 
 
 Available methods:
-
-
 
 
 
