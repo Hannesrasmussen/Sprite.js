@@ -54,7 +54,7 @@ ______________________________________________________
     new Sprite(name,width,height, --> true <-- );
 
     It is advised to pass argument 'help' as true when
-    you instatiate your first Sprite. Helpful information
+    you instantiate your first Sprite. Helpful information
     and tips are shown to you in the console. 
 
 
