@@ -3,7 +3,6 @@
 /**
  * @author Hannes Rasmussen
 */
-
 // Version : 0.1
 
 // Static class with the purpose of always being able to report an error related to Sprite, even if references within Sprite get all messed up.
@@ -25,6 +24,9 @@ const Error = ({
 */
 var Sprite = function(name,width,height,help){
     this.checkValidity(name,width,height,help);
+    if (help == true){
+        Error.typeError("Do not leave help mode enabled for an extended period of time. Help is only for testing / learning purposes.")
+    }
     this.name = name; // Sprite's name.
     this.help = help; // Want help through the dev-console? Pass the argument true.
     this.spritesheet;
