@@ -1,5 +1,4 @@
-
-<img src="spritejs.png" alt="Sprite.js!" title="Sprite.js!">
+![Aint_nuthin](spritejs.png?raw=true "Sprite.js")
 
 [Sprite.js - Documentation & Guide]
 
