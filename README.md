@@ -1,4 +1,4 @@
-![Sprite.js](spritejs.png)
+![Sprite.js](thumbn.png)
 
 [Sprite.js - Documentation & Guide]
 
