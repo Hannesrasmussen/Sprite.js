@@ -1,6 +1,6 @@
 ![Sprite.js](thumbn.png)
 
-Hannes Rasmussen - Hannes.e.rasmussen@gmail.com - https://www.hannesrasmussen.se
+Hannes Rasmussen - https://www.hannesrasmussen.se
 
 
 Sprite.js is uncompressed for the sake of IDE comments.
