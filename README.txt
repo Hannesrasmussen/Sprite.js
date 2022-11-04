@@ -1,4 +1,4 @@
-![Aint_nuthin](spritejs.png?raw=true "Sprite.js")
+![image description or alt text](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
 
 [Sprite.js - Documentation & Guide]
 
