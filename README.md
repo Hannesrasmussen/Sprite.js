@@ -1,17 +1,15 @@
 ![Sprite.js](thumbn.png)
 
-[Sprite.js - Documentation & Guide]
-
-Author: Hannes Rasmussen
-E-mail: Hannes.e.rasmussen@gmail.com
-Website: Hannesrasmussen.se
+Hannes Rasmussen - Hannes.e.rasmussen@gmail.com - https://www.hannesrasmussen.se
 
 
-// Sprite.js is uncompressed for the sake of IDE comments.
+Sprite.js is uncompressed for the sake of IDE comments.
 
 
-(Question) - (How do I import / require this?)
+
+
 ______________________________________________________
+(Question) - (How do I import / require this?)
 
     Add the following to your HTML document:
 
@@ -26,9 +24,8 @@ ______________________________________________________
             in the hierarchy than your other scripts.
 
 
-
-(Question) - (How do I create a sprite?)
 __________________________________________
+(Question) - (How do I create a sprite?)
 
     The recommended workflow for creating
     sprites is:
@@ -48,9 +45,9 @@ __________________________________________
             this guide.
 
 
-
-(Question) - (Why is this not working? / I am stuck.. etc)
 ______________________________________________________
+(Question) - (Why is this not working? / I am stuck.. etc)
+
 
     new Sprite(name,width,height, --> true <-- );
 
@@ -60,74 +57,73 @@ ______________________________________________________
 
 
 
-
-Available methods:
-
-
-
 ____________________________________________________
+Available methods:
+____________________________________________________
+
 addSpriteSheet(spritesheet,columns,rows,width,height)
-----------------------------------------------------
 
     Adds the spritesheet of your sprite.
 
-        (string) spritesheet : The adress to the spritesheet.
-        (number) columns     : The number of columns.
-        (number) rows        : The number of rows.
-        (number) width       : Width (px) of the spritesheet cells.
-        (number) height      : Height (px) of the spritesheet cells.
+    (string) spritesheet : The adress to the spritesheet.
+    (number) columns     : The number of columns.
+    (number) rows        : The number of rows.
+    (number) width       : Width (px) of the spritesheet cells.
+    (number) height      : Height (px) of the spritesheet cells.
 
-____________________________________________________
-                appendSpriteTo(parent)
-----------------------------------------------------
-    
+___________________________________________________
+
+appendSpriteTo(parent)
+
     Append sprite to a HTML element. 
 
-        (HTMLObjectElement) parent : The element that will append this sprite.
+    (HTMLObjectElement) parent : The element that will append this sprite.
 
-____________________________________________________
-                    addAnimation()
-----------------------------------------------------
-    
+___________________________________________________
+
+addAnimation()
+        
     Adds an animation to your sprite.
 
-        (string) name    : The name of the animation.
-        (number) start   : The first frame (spritesheet cell) of the animation.
-        (number) end     : The last frame (spritesheet cell) of the animation.
-        (number) speed   : Milliseconds per frame.
+    (string) name    : The name of the animation.
+    (number) start   : The first frame (spritesheet cell) of the animation.
+    (number) end     : The last frame (spritesheet cell) of the animation.
+    (number) speed   : Milliseconds per frame.
+            
 ____________________________________________________
-                    play(name,loop)
-----------------------------------------------------
+
+play(name,loop)
 
     Play an animation
 
-        (string) name    : The name of the animation to be played. 
-        (boolean) loop   : If the animation should loop or not.
+    (string) name    : The name of the animation to be played. 
+    (boolean) loop   : If the animation should loop or not.
 
 ____________________________________________________
-                    stop(name)
-----------------------------------------------------
-    
+
+stop(name)
+        
     Stop an animation.
-
-        (string) name    : The name of the animation to be stopped. 
+        
+    (string) name    : The name of the animation to be stopped. 
 
 ____________________________________________________
-            hasStopped(name,callback)
-----------------------------------------------------
+
+hasStopped(name,callback)
     
     Listens for the animation in question to end.
-
-        (string) name          : The name of the animation. 
-        (Function) callback    : Function to be called. 
+    
+    (string) name          : The name of the animation. 
+    (Function) callback    : Function to be called. 
 
 ____________________________________________________
-                setFrame(index)
-----------------------------------------------------
+
+setFrame(index)
+    
     
     Sets a specific frame (spritesheet cell).
 
-        (number) index : index of the frame.
+    (number) index : index of the frame.
 
     
 
