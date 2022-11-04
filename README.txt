@@ -1,4 +1,6 @@
 
+![Sprite.js](spritejs.png?raw=true "Sprite.js")
+
 [Sprite.js - Documentation & Guide]
 
 Author: Hannes Rasmussen
