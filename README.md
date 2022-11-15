@@ -10,17 +10,23 @@ Sprite.js is uncompressed for the sake of IDE comments.
 
 ______________________________________________________
 (Question) - (How do I import / require this?)
+    
 
-    Add the following to your HTML document:
+    Two options:
+    
+    Download Sprite.js and reference it in a script tag, like this:
 
-    <script src="./Sprite.js"></script>
-
-    Now; of course the url will be different 
-    depending on what folder you place Sprite.js in.
+        <script src="./Sprite.js"></script>
+    
+    or.. link to Sprite.js, like this:
+    
+        <script src="https://www.Hannesrasmussen.se/requests/Sprite.js"></script>
+        
+    You do you.
 
         (!) There is no need for neither import or require.
    
-        (!) Make sure that this script-tag is placed higher
+        (!) This should go without saying, but make sure that the script-tag is placed higher
             in the hierarchy than your other scripts.
 
 
