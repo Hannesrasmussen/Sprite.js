@@ -1,4 +1,5 @@
-![Sprite.js](thumbn.png)
+
+![thumbn](https://user-images.githubusercontent.com/111380153/207962935-3a764b86-9d74-4727-b388-f8bedcd675e4.png)
 
 Hannes Rasmussen - https://www.hannesrasmussen.se
 
