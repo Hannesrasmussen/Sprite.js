@@ -18,16 +18,10 @@ ______________________________________________________
     Download Sprite.js and reference it in a script tag, like this:
 
         <script src="./Sprite.js"></script>
-    
-    or.. link to Sprite.js, like this:
-    
-        <script src="https://www.Hannesrasmussen.se/requests/Sprite.js"></script>
-        
-    You do you.
 
         (!) There is no need for neither import or require.
    
-        (!) This should go without saying, but make sure that the script-tag is placed higher
+        (!) This should go without saying, but make sure that the script tag is placed higher
             in the hierarchy than your other scripts.
 
 
