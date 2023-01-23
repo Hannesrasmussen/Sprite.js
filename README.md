@@ -12,9 +12,6 @@ Sprite.js is uncompressed for the sake of IDE comments.
 ______________________________________________________
 (Question) - (How do I import / require this?)
     
-
-    Two options:
-    
     Download Sprite.js and reference it in a script tag, like this:
 
         <script src="./Sprite.js"></script>
