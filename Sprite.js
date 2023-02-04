@@ -8,7 +8,7 @@
 // Static class with the purpose of always being able to report an error related to Sprite, even if references within Sprite get all messed up.
 const Error = ({
     thisUndefined : function(){
-            console.error("%c[SPRITE] : %c(ILLEGAL) %cSprite method passed as argument in a sprite method's parameters. The object reference was lost.", "color:rgb(186, 49, 49)", "rgb(216, 78, 78)","color:rgb(255, 255, 255)");
+            console.error("%c[SPRITE] : %c(INVALID) %cSprite method passed as argument in a sprite method's parameters. The object reference was lost.", "color:rgb(186, 49, 49)", "rgb(216, 78, 78)","color:rgb(255, 255, 255)");
     },
     typeError : function(x){
         console.error("%c[SPRITE] : %c(ERROR) %c" + x, "color:rgb(186, 49, 49)", "rgb(216, 78, 78)","color:rgb(255, 255, 255)");
