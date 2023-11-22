@@ -1,128 +1,108 @@
-
-![thumbn](https://user-images.githubusercontent.com/111380153/207962935-3a764b86-9d74-4727-b388-f8bedcd675e4.png)
-
 Hannes Rasmussen - https://www.hannesrasmussen.com
 
+# Sprite.js
 
-Sprite.js is uncompressed for the sake of IDE comments.
+Sprite.js is an uncompressed JavaScript library designed for sprite creation. This README provides guidance on importing, creating sprites, troubleshooting, and lists available methods.
 
+## Importing Sprite.js
 
+To use Sprite.js in your project, download the Sprite.js file and reference it in a script tag in your HTML file:
 
+```html
+<script src="./Sprite.js"></script>
+```
 
-______________________________________________________
-(Question) - (How do I import / require this?)
-    
-    Download Sprite.js and reference it in a script tag, like this:
+Ensure that this script tag is placed higher in the hierarchy than your other scripts.
 
-        <script src="./Sprite.js"></script>
+## Creating a Sprite
 
-        (!) There is no need for neither import or require.
-   
-        (!) This should go without saying, but make sure that the script tag is placed higher
-            in the hierarchy than your other scripts.
+### Recommended Workflow:
 
+1. Create a sprite instance:
 
-__________________________________________
-(Question) - (How do I create a sprite?)
+   ```javascript
+   var/let/const sprite = new Sprite(name, width, height, help);
+   ```
 
-    The recommended workflow for creating
-    sprites is:
+2. Add a sprite sheet:
 
-    (1) var/let/const ??? = new Sprite(name,width,height,help);
+   ```javascript
+   sprite.addSpriteSheet(spritesheet, columns, rows, width, height);
+   ```
 
-    (2) ???.addSpriteSheet(spritesheet,columns,rows,width,height);
-      
-    (3) ???.addAnimation(name,start,end,speed);
+3. Add an animation:
 
-    (4) ???.play(name,loop);
+   ```javascript
+   sprite.addAnimation(name, start, end, speed);
+   ```
 
-        (!) Further explanation about arguments and what they do is
-            shown to you as you code in your IDE! 
-         
-        (!) If nothing is showing up for you, check the bottom of
-            this guide.
+4. Play the animation:
 
+   ```javascript
+   sprite.play(name, loop);
+   ```
 
-______________________________________________________
-(Question) - (Why is this not working? / I am stuck.. etc)
+Note:
+- Detailed information about arguments and their functions is displayed in your IDE as you code.
+- If you encounter issues, refer to the bottom of this guide for troubleshooting tips.
 
+## Troubleshooting and Tips
 
-    new Sprite(name,width,height, --> true <-- );
+If you are facing difficulties or need assistance, instantiate your first sprite with the 'help' argument set to true:
 
-    It is advised to pass argument 'help' as true when
-    you instantiate your first Sprite. Helpful information
-    and tips are shown to you in the console. 
+```javascript
+new Sprite(name, width, height, true);
+```
 
+This will provide helpful information and tips in the console.
 
+## Available Methods
 
-____________________________________________________
-Available methods:
-____________________________________________________
+### `addSpriteSheet(spritesheet, columns, rows, width, height)`
 
-addSpriteSheet(spritesheet,columns,rows,width,height)
+Adds the spritesheet of your sprite.
 
-    Adds the spritesheet of your sprite.
+- `spritesheet` (string): The address to the spritesheet.
+- `columns` (number): The number of columns.
+- `rows` (number): The number of rows.
+- `width` (number): Width (px) of the spritesheet cells.
+- `height` (number): Height (px) of the spritesheet cells.
 
-    (string) spritesheet : The adress to the spritesheet.
-    (number) columns     : The number of columns.
-    (number) rows        : The number of rows.
-    (number) width       : Width (px) of the spritesheet cells.
-    (number) height      : Height (px) of the spritesheet cells.
+### `appendSpriteTo(parent)`
 
-___________________________________________________
+Appends the sprite to an HTML element.
 
-appendSpriteTo(parent)
+- `parent` (HTMLObjectElement): The element that will append this sprite.
 
-    Append sprite to a HTML element. 
+### `addAnimation(name, start, end, speed)`
 
-    (HTMLObjectElement) parent : The element that will append this sprite.
+Adds an animation to your sprite.
 
-___________________________________________________
+- `name` (string): The name of the animation.
+- `start` (number): The first frame (spritesheet cell) of the animation.
+- `end` (number): The last frame (spritesheet cell) of the animation.
+- `speed` (number): Milliseconds per frame.
 
-addAnimation()
-        
-    Adds an animation to your sprite.
+### `play(name, loop)`
 
-    (string) name    : The name of the animation.
-    (number) start   : The first frame (spritesheet cell) of the animation.
-    (number) end     : The last frame (spritesheet cell) of the animation.
-    (number) speed   : Milliseconds per frame.
-            
-____________________________________________________
+Plays an animation.
 
-play(name,loop)
+- `name` (string): The name of the animation to be played.
+- `loop` (boolean): If the animation should loop or not.
 
-    Play an animation
+### `stop(name)`
 
-    (string) name    : The name of the animation to be played. 
-    (boolean) loop   : If the animation should loop or not.
+Stops an animation.
 
-____________________________________________________
+- `name` (string): The name of the animation to be stopped.
 
-stop(name)
-        
-    Stop an animation.
-        
-    (string) name    : The name of the animation to be stopped. 
+### `hasStopped(name, callback)`
 
-____________________________________________________
+Listens for the specified animation to end.
 
-hasStopped(name,callback)
-    
-    Listens for the animation in question to end.
-    
-    (string) name          : The name of the animation. 
-    (Function) callback    : Function to be called. 
+- `name` (string): The name of the animation.
+- `callback` (Function): Function to be called.
 
-____________________________________________________
+### `setFrame(index)`
 
-setFrame(index)
-    
-    
-    Sets a specific frame (spritesheet cell).
-
-    (number) index : index of the frame.
-
-    
-
-
+Sets a specific frame (spritesheet cell).
